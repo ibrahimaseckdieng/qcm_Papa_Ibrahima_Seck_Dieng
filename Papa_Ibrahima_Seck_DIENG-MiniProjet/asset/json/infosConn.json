@@ -1,0 +1,26 @@
+[
+{
+	"login":"seckdieng",
+	"password":"23juillet",
+	"prenom":"Papa Ibrahima Seck",
+	"nom":"Dieng",
+	"role":"admin",
+	"avatar":"asset/img/Avatar/seckdieng.jpg"
+},
+{
+	"login":"cr7",
+	"password":"ballondor",
+	"prenom":"Cristiano",
+	"nom":"Ronaldo",
+	"role":"joueur",
+	"avatar":"asset/img/Avatar/cr7.jpg"
+},
+{
+	"login":"neymar",
+	"password":"blesse",
+	"prenom":"Neymar",
+	"nom":"DeSilva",
+	"role":"joueur",
+	"avatar":"asset/img/Avatar/neymar.jpg"
+}
+]

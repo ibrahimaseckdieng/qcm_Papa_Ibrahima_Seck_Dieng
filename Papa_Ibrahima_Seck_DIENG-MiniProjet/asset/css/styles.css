@@ -1,0 +1,152 @@
+body{
+	background-color: rgb(171,171,171);
+}
+#container{
+	width:900px;
+	height: 500px;
+	margin: auto;
+	background-image: url("../img/Images/img-bg.jpg");
+}
+#haut{
+	width: 100%;
+	height: 80px;
+	background-color: rgb(5,36,38);
+}
+#logoQuizzSA {
+	height:100%;
+	width: 50px;
+	float:left;	
+	margin-left: 10px;
+}
+#plaisir{
+	text-align: center;
+	color: white;
+	font-family: cursive;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+}
+#formConnexion{
+	width:50%;
+	height: 250px ;
+	margin:auto;
+	margin-top: 70px;
+	background-color: rgb(242,242,242);
+}
+#log_form{
+	width: 100%;
+	height:50px;
+	background-color: rgb(81,191,208);
+}
+#log_form p{
+	color:white;
+	font-family: cursive;
+	margin-left: 20px;
+	padding-top: 10px;
+}
+.inputConnexion{
+	width: 90%;
+	height: 35px;
+	margin-left: 5%;
+	background-color:rgb(240,238,241);
+	text-indent: 10px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.iconeInput{
+	margin-left: -35px;
+	margin-top: 10px;
+}
+#btnConnexion {
+	width: 100px;
+	height: 35px;
+	margin-top: 5%;
+	margin-left: 5%;
+	background-color: rgb(81,191,208);
+	float: left;
+	display: inline-block;
+	border-radius: 5px;
+	color: white;
+}
+#inscrire{
+	display:inline-block;
+	margin-left: 20px;
+	margin-top: 35px;
+}
+#inscrire a{
+	text-decoration: none;
+	color: gray;
+}
+
+#formQuestion{
+	width:96%;
+	height: 250px ;
+	margin:auto;
+	background-color: rgb(242,242,242);
+}
+#bienvenue{
+	width: 100%;
+	height:80px;
+	background-color: rgb(81,191,208);
+}
+#divAvatar{
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
+}
+#avatar{
+    width: 50px;
+    height: 50px;
+    border-radius :50%;
+    border:2px solid white;
+}
+figcaption{
+    width: 50px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: -5px;
+    font-weight: bold;
+}
+#bienvenue p{
+    display: inline-block;
+    float: left;
+    height: 70px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 20px;
+    font-family: cursive;
+}
+#btnDeconnexion{
+    height: 20px;
+    width: 120px;
+    background-color: rgb(60,221,225);
+	float: right;
+	display: inline-block;
+    color: white;
+    margin-right: 20px;
+    margin-top: 25px;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 5px;
+	text-decoration: none;
+}
+#btnDeconnexion a{
+	text-decoration: none;
+	color: white;
+}
+#parametrer p{
+    display: inline-block;
+    float: left;
+    height: 70px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 25px;
+    font-family: cursive;
+}
