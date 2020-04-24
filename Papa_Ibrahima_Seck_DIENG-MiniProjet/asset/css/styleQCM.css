@@ -74,7 +74,7 @@ body{
 	margin-left: 25px;
 	margin-top: 5px;
 	border: 1px solid #555;
-	background-color: #555;
+	background-color: rgb(189, 189, 189);
 	border-radius: 4px;
     font-size: 12px;
     color: red;
@@ -83,10 +83,10 @@ body{
     display: inline-block;
 	margin-left: 15px;
 	border: 1px solid #555;
-	background-color: red;
+	background-color: rgb(189, 189, 189);
 	border-radius: 4px;
     font-size: 10px;
-    color: black;
+    color: red;
 }
 .iconeInput{
 	margin-left: -35px;
@@ -117,6 +117,13 @@ body{
 	height: 83% ;
 	margin:auto;
 	background-color: rgb(230, 230, 230);
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#formInscription{
+	width:96%;
+	height: 83% ;
+	margin:auto;
 	margin-top: 10px;
 	border-radius: 5px;
 }
@@ -207,16 +214,22 @@ body{
 	height: 70%;
 	margin-top: 20px;
 	margin-left: 10px;
-	background-color: rosybrown;
+	border-radius: 5px;
+}
+#zoneInsJoueur{
+	display: inline-block;
+	width: 65%;
+	height: 80%;
+	margin-left: 200px;
 	border-radius: 5px;
 }
 #zoneListeJoueurs{
 	width: 100%;
 	height: 100%;
 	margin-top: 0px;
-	background-color: yellow;
 	border-radius: 5px;
-	color:rgb(199, 147, 118);
+    color:rgb(199, 147, 118);
+    background-color: white;
 }
 #titreListeJoueurs{
 	font-size: 20px;
@@ -228,10 +241,11 @@ body{
 }
 #listeJoueursParScore{
 	width: 90%;
-	height: 370px;
-	border:2px solid rgb(199, 147, 118);
+	height: 375px;
+	border:2px solid rgb(81,191,208);
 	margin: auto;
-	margin-top: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 #profil{
 	width: 100%;
@@ -301,9 +315,9 @@ body{
 }
 #formIns, #myForm{
 	width: 280px;
-	height: 360px;
+	height: 370px;
 	float: left;
-	color: rgb(180, 180, 180);
+    color: rgb(180, 180, 180);
 	font-family: serif;
 }
 #paraInscrire{
