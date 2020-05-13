@@ -1,6 +1,8 @@
 var formIns=document.getElementById('formIns');
-formIns.addEventListener('submit',function(e){			
-    $.getJSON('../asset/json/infoConnexion.json',function(data){
+formIns.addEventListener('submit',function(e){
+    deactivateTooltips();			
+    readTextFile("../asset/json/infoConnexion.json", function(text){
+        var data= JSON.parse(text);
         let login = document.getElementById("loginIns").value;
         let prenomIns = document.getElementById("prenomIns").value;
         let nomIns = document.getElementById("nomIns").value;
@@ -13,7 +15,7 @@ formIns.addEventListener('submit',function(e){
         }
         else{
             if (verifPrenom==true && verifNom==true && verifLogin==true && verifPassword==true && verifIdentiquePasswords==true) {
-                alert("Admin créé avec succès !");
+                alert("Joueur créé avec succès !");
             }
             else{
                 window.stop();
@@ -99,3 +101,26 @@ function deactivateTooltips() {
   
 }
 deactivateTooltips();
+function desactiverCouleurIcone(){
+    var icone = document.querySelectorAll('.iconeMenu'),
+        iconeLength = icone.length;
+    for (var i = 0; i < iconeLength; i++) {
+        if(icone[i].src=="../asset/img/Images/Icones/ic-liste-active.png"){
+            icone[i].src=="../asset/img/Images/Icones/ic-liste.png"
+        }
+        if(icone[i].src=="../asset/img/Images/Icones/ic-ajout-active.png"){
+            icone[i].src=="../asset/img/Images/Icones/ic-ajout.png"
+        }
+    }
+}
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}

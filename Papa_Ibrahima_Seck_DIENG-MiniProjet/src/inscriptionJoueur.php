@@ -6,19 +6,25 @@
 <head>
 	<title>Page Admin</title>
     <link rel="stylesheet" type="text/css" href="../asset/css/styleQCM.css">
+    <style>
+        #lienSeConnecter{
+            text-decoration:none;
+            margin-left:60px;
+            color:grey;
+        }
+    </style>
 </head>
 <body>
-	<script src="../asset/js/jquery-3.5.0.min.js"></script>
 	<div id="container">
 		<div id="haut">
 			<img id="logoQuizzSA" src="../asset/img/Images/logo-QuizzSA.png">
 			<h2 id="plaisir"> Le plaisir de jouer</h2>
 		</div>
         <div id="formInscription">
-			<div id="zoneInsJoueur">
+			<div id="zoneJoueurIns">
                 <div id="zoneInscription">
-                    <form enctype="multipart/form-data" method="POST" action="creerUtilisateur.php" id="formIns">
-                        <p id="paraInscrire">S'INSCRIRE<br><span id="mesInscrire">Pour proposer des quizz</span></p>
+                    <form enctype="multipart/form-data" method="POST" action="inscriptionJoueur.php" id="formIns">
+                        <p id="paraInscrire">S'INSCRIRE<br><span id="mesInscrire">Pour tester votre niveau de culture générale</span></p>
                         <hr>
                         <label class="labelIns">Prénom</label>
                         <input type="text" id="prenomIns" name="prenomIns" class="inputIns"></input>
@@ -44,6 +50,7 @@
                         <img id="ApercuAvatarIns"/>
                         <figcaption id="figcaptionAvatarIns">Avatar Admin</figcaption>
                     </div>
+                    <a href="../index.php" id="lienSeConnecter">Se Connecter</a>
                 </div>
 			</div>
 		</div>
@@ -64,7 +71,7 @@
             document.getElementById('figcaptionAvatarIns').style.display="inline";
         };
     </script>
-	<script src="creerUtilisateur.js"></script>
+	<script src="../asset/js/inscriptionJoueur.js"></script>
 </body>
 </html>
 <?php
